@@ -1,0 +1,31 @@
+{
+  "name": "automatyzacja_pliki",
+  "version": "1.0.0",
+  "description": "automatyzacja-kurs",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "wdio wdio.conf.ts",
+    "les1": "wdio wdio.conf.ts --suite lesson1",
+    "les2": "wdio wdio.conf.ts --suite lesson2",
+    "les3": "wdio wdio.conf.ts --suite lesson3"
+  },
+  "keywords": [
+    "automatyzacja",
+    "wbdriver",
+    "io"
+  ],
+  "author": "MS",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@wdio/cli": "^8.16.7",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^8.16.7",
+    "@wdio/mocha-framework": "^8.16.7",
+    "@wdio/spec-reporter": "^8.16.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
