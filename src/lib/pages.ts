@@ -5,3 +5,5 @@ export const productURL: string =
 export const manURL: string = "https://wearmedicine.com/c/on";
 
 export const womanURL: string = "https://wearmedicine.com/c/ona";
+
+export const alertHP: string = "https://demo.automationtesting.in/Alerts.html";
