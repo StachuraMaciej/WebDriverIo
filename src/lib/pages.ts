@@ -7,3 +7,5 @@ export const manURL: string = "https://wearmedicine.com/c/on";
 export const womanURL: string = "https://wearmedicine.com/c/ona";
 
 export const alertHP: string = "https://demo.automationtesting.in/Alerts.html";
+
+export const upload: string = "https://the-internet.herokuapp.com/upload";
