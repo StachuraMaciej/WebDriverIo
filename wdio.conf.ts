@@ -42,6 +42,7 @@ export const config: Options.Testrunner = {
     lesson3: ["./src/spec/e2e/title-verification.ts"],
     lesson4: ["./src/spec/e2e/alerts.ts"],
     lesson5: ["./src/spec/e2e/upload.ts"],
+    lesson6: ["./src/spec/e2e/moveto.ts"],
   },
 
   // Patterns to exclude.
