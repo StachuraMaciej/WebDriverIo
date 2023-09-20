@@ -1,9 +1,11 @@
 // test weryfikacji strony glownej google
-describe("Verify home page Google", async () => {
+import homePage from "../../pages/homePage";
+
+describe("Added metods", async () => {
   // pierwszy przypadek testowy
-  it("Should open google page and wait for 3000ms", async () => {
-    await browser.url("https://google.com");
-    await browser.pause(3000);
+  it("Should open page and click cookies", async () => {
+    await homePage.openHomePage();
+    await homePage.moveToCookies();
   });
   //
 });

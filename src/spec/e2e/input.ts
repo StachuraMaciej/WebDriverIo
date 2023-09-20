@@ -1,4 +1,5 @@
 import { homeURL } from "../../lib/pages";
+import homePage from "../../pages/homePage.ts";
 //import { homePageTitle } from "../../lib/wordData";
 
 describe("Lesson 1 - Inputs", async () => {
@@ -20,17 +21,6 @@ describe("Lesson 1 - Inputs", async () => {
   });
   //
 
-  // drugi przypadek testowy "STEP-2"
-  /*it("Should type value to search input", async () => {
-    // pobieranie elementu
-    const input: WebdriverIO.Element = await $("#productsSearch");
-    await input.setValue("bluzka czerwona");
-    // czyszczenie wartości
-    await input.clearValue();
-    // upewnienie sie czy wartość zostala wyczyszczona
-    expect(await input.getValue()).toContain("");
-  });*/
-
   // trzeci przypadek testowy "STEP-3"
   it("Should click button Cookies accept", async () => {
     // pobieranie elementu
@@ -44,6 +34,13 @@ describe("Lesson 1 - Inputs", async () => {
     await browser.pause(1000); // bycie na stronie
   });
 
+  // drugi przypadek testowy "STEP-2"
+  it("Should type value to search input", async () => {
+    await homePage.putText();
+    expect(await homePage.field.getValue()).toContain("bluzka czerwona");
+  });
+
+  /*
   // czwarty przypadek testowy "STEP-4"
   it("Should click button HEART", async () => {
     // pobieranie elementu
@@ -175,4 +172,8 @@ describe("Lesson 1 - Inputs", async () => {
     // Poczekaj na pewną ilość czasu (opcjonalne)
     await browser.pause(15000); // bycie na stronie
   });
+
+
+
+  */
 });

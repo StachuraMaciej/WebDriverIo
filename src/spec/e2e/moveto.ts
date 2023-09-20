@@ -1,9 +1,10 @@
-import { homeURL } from "../../lib/pages";
+// Zaimportowanie metody z folderu pages
+import homePage from "../../pages/homePage";
 
 describe("Lesson 7 - move to", async () => {
   it("Should open page and verify url", async () => {
-    await browser.url(homeURL);
-    await expect(browser).toHaveUrl(homeURL);
+    // Zaimportowanie metody z folderu pages
+    await homePage.openHomePage();
   });
 
   it("Should click button Cookies accept", async () => {

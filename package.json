@@ -10,7 +10,8 @@
     "les3": "wdio wdio.conf.ts --suite lesson3",
     "les4": "wdio wdio.conf.ts --suite lesson4",
     "les5": "wdio wdio.conf.ts --suite lesson5",
-    "les6": "wdio wdio.conf.ts --suite lesson6"
+    "les6": "wdio wdio.conf.ts --suite lesson6",
+    "les7": "wdio wdio.conf.ts --suite lesson7"
   },
   "keywords": [
     "automatyzacja",

@@ -20,5 +20,5 @@
     "noFallthroughCasesInSwitch": true,
     "allowJs": true
   },
-  "include": ["./src/spec/**/*.ts", "./wdio.conf.ts"]
+  "include": ["./src/spec/**/*.ts", "./wdio.conf.ts", "./src/pages/*.ts"]
 }

@@ -1,29 +1,31 @@
-import { productURL } from "../../lib/pages.ts";
+import productPage from "../../pages/productPage.ts";
+import homePage from "../../pages/homePage.ts";
 
 describe("Lesson 3 - Select", async () => {
   it("Schould open product page and verify url", async () => {
-    await browser.url(productURL);
-    await expect(browser).toHaveUrl(productURL);
+    await productPage.openProductPage();
   });
 
   it("Should click button Cookies accept", async () => {
     // pobieranie elementu
-    const button: WebdriverIO.Element = await $(
+    await homePage.moveToCookies();
+    /*const button: WebdriverIO.Element = await $(
       ".CookiesInfo__cookiesInfoBtnWrapperAccept__nyIJU"
     );
 
     // Kliknij przycisk
     await button.click();
     // Poczekaj na pewną ilość czasu (opcjonalne)
-    await browser.pause(1000); // bycie na stronie
+    await browser.pause(1000); // bycie na stronie*/
   });
 
   it("Schould open dropdown with size", async () => {
-    const selectSize: WebdriverIO.Element = await $(
+    await productPage.selectProductSize();
+    /*const selectSize: WebdriverIO.Element = await $(
       "div[data-test='size_dropdown']"
     );
     await selectSize.click();
-    await browser.pause(4000);
+    await browser.pause(4000);*/
   });
 
   it("Should select size in drop down", async () => {
